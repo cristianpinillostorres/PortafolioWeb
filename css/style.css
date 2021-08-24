@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(51, 51, 51);
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+  }
+  
+  .grid-container > * {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #000000;
+  }
+  
+  .header-text h1 {
+    text-transform: uppercase;
+    background-color: #000000;
+    font-size: 40px;
+    color: #ebebeb;
+    padding: 1%;
+  }
+  
+  .about {
+    grid-area: about;
+    background-color: #ebebeb;
+    color: #ffffff;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  
+  .about-text h2{
+    background-color: #ebebeb;
+    font-size: 40px;
+    text-align: left;
+    color: #202020;
+    padding-left: 5%;
+    padding-top: 1%;
+    
+  }
+  .about-text p{
+    background-color: #ebebeb;
+    font-size: 20px;
+    color: #202020;
+    padding-left: 5%;
+    padding-top: 1%;
+    text-align: left;
+    
+  }
+  
+  .about-image{
+    background-color: #814444;
+    color: #202020;
+  }
+  .services {
+    grid-area: services;
+    background-color: #1d1d1d;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .services-text h2 {
+    text-transform: uppercase;
+    background-color: #1d1d1d;
+    font-size: 30px;
+    text-align: center;
+    color: #ebebeb;
+    padding-left: 5%;
+  }
+  
+  .portfolio {
+    grid-area: portfolio;
+    background-color: #ebebeb;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .portfolio-text h2 {
+    text-transform: uppercase;
+    background-color: #ebebeb;
+    font-size: 30px;
+    text-align: center;
+    color:#1d1d1d;
+    padding-left: 5%;
+  }
+  
+  .contact {
+    grid-area: contact;
+    background-color: #1d1d1d;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .contact-text h2 {
+    text-transform: uppercase;
+    background-color: #1d1d1d;
+    font-size: 30px;
+    text-align: center;
+    color: #ebebeb;
+    padding-left: 5%;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #555555;
+  }
+  
+  .footer-text h1 {
+    background-color: #555555;
+    font-size: 15px;
+    text-align: center;
+    color: #ebebeb;
+    margin-top: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template:
+      "header" 100px
+      "about"  auto
+      "services" auto
+      "portfolio" auto
+      "contact" auto
+      "footer" 70px 
+  }
+  
