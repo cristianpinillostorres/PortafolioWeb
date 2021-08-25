@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Header */
+
+.header {
+  color: #ebebeb;
+  background-color: #242729;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo img {
+  
+  margin-left: 50px;
+  padding: 15px;
+  width: 100px;
+  height: 100px;
+}
+
+.header-logo h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  float: right;
+  padding: 10px;
+}
+
+.nav-menu {
+  color: #ebebeb;
+  float: right;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-right: 100px;
+}
+.nav-menu a {
+  color: #ffffff;
+  font-size: 20px;
+}
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+}
+.nav-menu li {
+  margin-left: 50px;
+}
+
+/* Section light*/
+
+.section-light {
+  background-color: #fff;
+  color: #42484c;
+  padding: 50px 0px;
+}
+
+.section-light h1 {
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-left: 50px;
+}
+
+.section-light p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.section-light span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* acerca de*/
+
+.section-light #about {
+}
+
+.section-light #about h1 {
+  margin-left: 35px;
+}
+
+.section-light #about p {
+  text-align: justify;
+  margin-left: 50px;
+}
+.section-light #about img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* portafolio */
+.section-light #portfolio {
+}
+
+.section-light #portfolio h1 {
+}
+
+.section-light #portfolio p {
+}
+
+/* Section dark*/
+
+.section-dark {
+  background-color: #42484c;
+  color: #fff;
+  padding: 50px 0px;
+}
+
+.section-dark h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-left: 50px;
+}
+
+.section-dark p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.section-dark span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: #242729;
+  padding: 20px 0px;
+  margin-top: 0px;
+}
+
+.footer h1 {
+  font-size: 15px;
+  text-align: center;
+  color: #ebebeb;
+}
+
+
+/* Extra Small devices  */
+@media (max-width: 480px) {
+    
+}
+
+/* Extra Small devices  */
+@media (max-width: 767px) {
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

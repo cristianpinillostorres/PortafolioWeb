@@ -1,50 +1,77 @@
-<!-- Establece el tipo de documento (HTML 5) -->
-<!DOCTYPE html> 
-<!-- Unn atributo que Establece el idioma de la pagina -->
+<!DOCTYPE html>
 <html lang="es">
-<!-- Datos enviados al navegador con informacion de la pagina, parte no visible -->
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio de servicios</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<!-- Representa el contenido de la pagina , parte visible -->
-<body class="grid-container">
-  <header class="header">
-      <div class="header-text h1  ">
-        <h1>Portafolio web</h1>        
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio de servicios</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  </head>
+  <body class="grid-container">
+    <!-- Cabecera con menu de navegacion -->
+    <header class="header">
+      <div class="header-logo">
+        <img src="images/logo.png" alt="" />
+        <h1>Portafolio Web</h1>
       </div>
-  </header>
-    <section class="about">
-        <div class="about-text">
-            <!-- Encabezado -->
-            <h2>Bienvenido</h2> 
-            <!-- Parrafo -->
-            <p>Hola soy cristhian David Pinillos Torres un estudiante de Ingenieria de Sistemas de la universidad de cundinamarca actualmente cursando 9 semestre, apasionado por el desarrollo de aplicaciones web.</p>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Portafolio</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Acerca de -->
+    <section class="section-light">
+      <div class="container">
+        <div id="about" class="row">
+          <div class="col-md-6 col-sm-6">
+            <div>
+              <h1>Bienvenido</h1>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 nopadding">
+            <img src="" />
+          </div>
         </div>
-        <div class="about-image">
+      </div>
+    </section>
+    <!-- Servicios -->
+    <section class="section-dark">
+      <div class="container">
+        <div class="row">
+          <div class="section-dark">
+            <h1>Servicios</h1>
+          </div>
         </div>
-    </section>
-    <section class="services">
-      <div class="services-text">
-        <h2>Servicios</h2>
       </div>
     </section>
-    <section class="portfolio">
-      <div class="portfolio-text">
-        <h2>Portafolio</h2>
+    <!-- Portafolio -->
+    <section class="section-light">
+      <div class="container">
+        <div class="row">
+          <div class="section-light">
+            <h1>Portafolio</h1>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="contact">
-      <div class="contact-text">
-        <h2>Contacto</h2>
+    <!-- Contacto -->
+    <section class="section-dark">
+      <div class="container">
+        <div class="row">
+          <div class="section-dark">
+            <h1>Contacto</h1>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- Footer -->
     <footer class="footer">
-      <div class="footer-text">
-        <h1>Desarrollado por Cristhian Pinillos Torres © 2021.</h1>
-      </div>
+      <h1 class="copyright">
+        &#169; Todos los derechos reservados. Desarrollado por Cristhian Pinillos Torres. 2021.
+      </h1>
     </footer>
-</body>
+  </body>
 </html>
