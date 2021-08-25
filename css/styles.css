@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   text-decoration: none;
   list-style: none;
 }
@@ -14,56 +15,65 @@ body {
 .header {
   color: #ebebeb;
   background-color: #242729;
+  width: 100%;
+  height: 90px;
   align-items: center;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top:0;
+  left:0; 
 }
 
 .header-logo img {
-  
-  margin-left: 50px;
-  padding: 15px;
-  width: 100px;
-  height: 100px;
+
+  padding: 10px;
+  width: 85px;
+  height: 85px;
 }
 
 .header-logo h1 {
   text-transform: uppercase;
-  font-size: 40px;
   float: right;
-  padding: 10px;
 }
 
 .nav-menu {
   color: #ebebeb;
   float: right;
-  text-transform: uppercase;
-  margin-top: 15px;
-  margin-right: 100px;
 }
 .nav-menu a {
   color: #ffffff;
   font-size: 20px;
-}
-.nav-menu ul {
-  display: flex;
   align-items: center;
 }
-.nav-menu li {
-  margin-left: 50px;
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+} 
+
+.top{
+  margin-top: 85px;
 }
 
 /* Section light*/
 
 .section-light {
   background-color: #fff;
-  color: #42484c;
+  color:   #42484c;
   padding: 50px 0px;
 }
 
 .section-light h1 {
-  text-transform: uppercase;
   font-size: 35px;
+  text-transform: uppercase;
   margin-left: 50px;
 }
 
@@ -73,41 +83,8 @@ body {
 }
 
 .section-light span {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: bold;
-}
-
-/* acerca de*/
-
-.section-light #about {
-}
-
-.section-light #about h1 {
-  margin-left: 35px;
-}
-
-.section-light #about p {
-  text-align: justify;
-  margin-left: 50px;
-}
-.section-light #about img {
-  width: 100%;
-  cursor: pointer;
-}
-
-.nopadding {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* portafolio */
-.section-light #portfolio {
-}
-
-.section-light #portfolio h1 {
-}
-
-.section-light #portfolio p {
 }
 
 /* Section dark*/
@@ -155,7 +132,52 @@ body {
 
 /* Extra Small devices  */
 @media (max-width: 767px) {
+  .header {
+    color: #ebebeb;
+    background-color: #242729;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+  }
+  .header-logo img {
+    margin-left: 30px;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .header-logo h1 {
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+  
+  .nav-menu {
+    position: absolute;
+    top: 90px;
+    left: 0 ;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(51, 51, 51, 0.95);
+    
+  }
+  
+  .nav-menu a:hover {
+    background-color: #ebebeba9;
+  }
 
+  .nav-menu a {
+    color: #ffffff;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    height: 60px;
+    padding: 15px;
+    border-bottom: 1px solid #fff; 
+  }
 }
 
 /* Small devices (tablets, 768px and up) */
