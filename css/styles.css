@@ -25,14 +25,14 @@ body {
 .header-logo img {
   width: 64px;
   height: 64px;
-  margin-left: 40px;
+  margin-left: 20px;
   margin-top: 14px;
 }
 
 .header-logo h1 {
   font-size: 30px;
   font-weight: bold;
-  padding: 0 40px;
+  padding: 0 25px;
   line-height: 90px;
   text-transform: uppercase;
   float: right;
@@ -42,7 +42,7 @@ body {
   display: flex;
   justify-content: space-between;
 
-  max-width: 1200px;
+  max-width: 1145px;
   margin: 0 auto;
 }
 .nav-menu {
@@ -50,7 +50,7 @@ body {
   color: #ebebeb;
   float: right;
   display: flex;
-  margin-right: 40px;
+  margin-right: 20px;
   line-height: 90px;
 }
 .nav-menu a {
@@ -183,11 +183,11 @@ body {
     font-size: 15px;
     line-height: 70px;
     padding: 0 0;
-    margin-left: 15px;
+    margin-left: 12px;
   }
 
   .nav {
-    max-width: 768px;
+    max-width: 778px;
   }
 
   .nav-menu {
