@@ -177,17 +177,17 @@ body {
     width: 45px;
     height: 45px;
     margin-top: 13px;
-    margin-left: 15px;
   }
 
   .header-logo h1 {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 70px;
-    padding: 0 20px;
+    padding: 0 0;
+    margin-left: 15px;
   }
 
   .nav {
-    max-width: 514px;
+    max-width: 768px;
   }
 
   .nav-menu {
@@ -197,35 +197,31 @@ body {
 
   .nav-menu a {
     font-size: 12px;
-    margin-inline-start: 8px;
+    margin-inline-start: 6px;
   }
 }
 
 /* Small devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   /* Header */
   .header {
-    height: 70px;
+    height: 80px;
   }
 
   .header-logo img {
     width: 50px;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 13px;
   }
 
   .header-logo h1 {
     font-size: 20px;
-    line-height: 70px;
+    line-height: 80px;
     padding: 0 20px;
   }
 
-  .nav {
-    max-width: 718px;
-    margin: 0 auto;
-  }
   .nav-menu {
-    line-height: 70px;
+    line-height: 80px;
   }
 
   .nav-menu a {
@@ -233,8 +229,8 @@ body {
   }
 }
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
 }
