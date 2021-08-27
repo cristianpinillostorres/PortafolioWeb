@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio de servicios</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/b6f179fc24.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- Cabecera con menu de navegacion -->
@@ -15,9 +16,9 @@
           <h1>Portafolio Web</h1>
         </div>
         <ul class="nav-menu">
-          <a href="#">Servicios</a></li>
-          <a href="#">Portafolio</a></li>
-          <a href="#">Contacto</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Portafolio</a></li>
+          <li><a href="#">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -60,7 +61,40 @@
       <div class="container">
         <div class="row">
           <div class="section-dark">
-            <h1>Contacto</h1>
+            <div class="section-dark-title">
+              <h1>Contacto</h1>
+              <div class="vertical-line"></div>
+            </div>
+            <div class="section-dark-content">  
+              <div class="contact-info">
+                <div class="contact-infos">
+                <p>Siempre estoy interesado en conocer nuevos proyectos y oportunidades. </p>
+                <p>¡No dudes en ponerte en contacto!</p>
+                <ul>
+                  <li> <i class="fas fa-map-marker-alt"></i><a> Cra 9 E # 4-28 Facatativa-Cundinamarca</a></li>
+                  <li><i class="fas fa-at"></i><a>cristianpinillostorres@gmail.com</a></li>
+                  <li><i class="fas fa-phone-alt"></i><a>(+57) 312-360-7786</a></li>
+                </ul>
+                </div>
+                <div class="contact-icons">
+                  <span><i id="linkedin" class="fab fa-linkedin"></i></span>
+                  <span><i id="whatsapp" class="fab fa-whatsapp-square"></i></span>
+                  <span><i id="mail" class="fas fa-envelope-square"></i></span>
+                </div>
+              </div>
+              <div class="contact-form">
+                <div class="main-input">
+                  <form>
+                      <input type="text" name="Name" placeholder="Ingresa tu nombre" class="contact-input" required="" />
+                      <input type="email" name="Email" placeholder="Ingresa tu email" class="contact-input" required="" />
+                      <textarea name="Message" placeholder="Escribe tu mensaje" class="contact-input-text" required=""></textarea>
+                </div>
+                <div class="text-right">
+                  <button class="btn-send-style">Enviar</button>
+                </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
