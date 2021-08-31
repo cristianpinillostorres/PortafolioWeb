@@ -5,21 +5,12 @@
   text-decoration: none;
   list-style: none;
 }
-
-body {
-  font-family: "Arial", sans-serif;
-  background-image: url("/images/fondo.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+html {
+  scroll-padding-top: 85px; /* height of sticky header */
 }
 
-.body:before {
-  width: 100%;
-  min-height: 100hv;
-  background-color: #0015221a;
-  opacity: 1;
+body {
+  font-family: 'Segoe UI', sans-serif;
 }
 
 /* Header */
@@ -72,6 +63,11 @@ body {
   margin-inline-start: 20px;
 }
 
+.nav-menu a:hover {
+  color: #0678c4;
+  
+
+}
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -86,13 +82,59 @@ body {
 
 .top {
   margin-top: 90px;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /* Banner */
 
 .section-banner {
   height: 100vh;
-  background-color: #011d30;
+  
+  background-image: url("/images/fondo.jpg");
+    
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-banner-content{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(3, 22, 37, 0.65);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.section-banner-content h1{
+  color:#fafafa;
+  font-size: 90px;
+  margin-top: 50px;
+  -webkit-text-stroke: 2px #001522;
+}
+
+.section-banner-content h3{
+  color:#fafafa;
+  font-size: 30px;
+  -webkit-text-stroke: 1px #001522;
+}
+
+.section-banner-content h5{
+  margin-top: 100px;
+  color:#fafafa;
+  font-size: 25px;
+  font-weight: bolder;
+  -webkit-text-stroke: 1px #001522;
+}
+
+#ic-down{
+  font-size: 40px;
+  color: #fafafa;
+  margin-top: 100px;
+  -webkit-text-stroke: 1px #001522;
 }
 
 /* Section dark*/
@@ -315,7 +357,7 @@ body {
   display: flex;
   flex-direction: row;
   background-color: #fafafa;
-  margin: 0 200px;
+  margin: 0 10%;
   margin-bottom: 50px;
   border: 1px solid #bbbbbb;
   box-shadow: 3px 3px 2px rgba(180, 180, 180, 0.753);
@@ -431,6 +473,12 @@ body {
   margin-top: 10px;
 }
 
+
+
+.contact-icons ul {
+  display: flex;
+}
+  
 .contact-icons i {
   font-size: 50px;
   margin-right: 15px;
@@ -447,14 +495,17 @@ body {
 
 #linkedin {
   color: rgb(38, 104, 179);
+  cursor: pointer;
 }
 
 #whatsapp {
   color: rgb(0, 180, 70);
+  cursor: pointer;
 }
 
 #mail {
   color: rgb(180, 0, 0);
+  cursor: pointer;
 }
 
 #mail-form {
