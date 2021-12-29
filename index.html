@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,10 +9,11 @@
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
   <script src="https://kit.fontawesome.com/b6f179fc24.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <!-- Cabecera con menu de navegacion -->
   <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark  ">
       <div class="container-fluid">
         <div class="navbar-brand d-flex" href="#">
           <img src="/assets/images/logo.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
@@ -40,28 +42,29 @@
   <!-- Banner -->
   <section class="section-dark">
     <section class="banner">
-          <div class="banner-content">
-            <h4>Hola! Bienvenido a mi portafolio</h4>
-            <h1>Desarrollador Full Stack</h1>
-            <h3>Diseño - Desarrollo - Mantenimiento </h3>   
-            <a href="#acerca"><i id="icono-down"class="fas fa-chevron-down"></i></a>      
-          </div>
+      <div class="banner-content">
+        <h4>Hola! Bienvenido a mi portafolio</h4>
+        <h1>Desarrollador Full Stack</h1>
+        <h3>Diseño - Desarrollo - Mantenimiento </h3>
+        <a href="#acerca"><i id="icono-down" class="fas fa-chevron-down"></i></a>
+      </div>
     </section>
-  </section> 
+  </section>
 
+  
   <!-- Acerca de -->
   <section id="acerca" class="section-light py-4">
     <div class="container">
-      <h2 class="text-center">ACERCA DE MI</h2>
-      <div class="vertical-line-light mx-auto mb-4"></div>
+      <h2 class="text-center">SOBRE MI</h2>
+      <div class="line-light mx-auto mb-4"></div>
       <div class="row justify-content-center my-3">
-        <div class="col-6">
+        <div class="col-lg-6">
           <p>Hola! Soy Cristhian Pinillos Torres actualmente estudiante de Ingenieria de sistemas. Enfocado en el
             estudio del diseño, el desarrollo y el mantenimiento de aplicaciones para entornos web y escritorio.</pc>
           <p>Estoy en búsqueda de nuevos retos profesionales para aquirir experiencia en el campo laboral para asi
             seguir profundizando mis conocimientos y habilidades.</p>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4">
           <img src="/assets/images/photo.jpg" width="300px">
         </div>
       </div>
@@ -72,7 +75,7 @@
   <section id="servicios" class="section-dark py-4">
     <div class="container">
       <h2 class="text-center">SERVICIOS</h2>
-      <div class="vertical-line mx-auto"></div>
+      <div class="line-dark mx-auto"></div>
       <p class="text-center my-4">Los servicios que puedo llegar a ofrecer como desarrollador.</p>
       <div class="row row-cols-lg-3 align-items-stretch justify-content-center my-3">
         <div class="col">
@@ -95,94 +98,205 @@
   <section class="section-light py-4">
     <div class="container">
       <h2 class="text-center">HABILIDADES</h2>
-      <div class="vertical-line-light mx-auto mb-4"></div>
-      <p class="text-center my-3">Algunos de los lenguajes de programacion y tecnologias que he utilizado en mi etapa formativa.</p>
-      <div class="row row-cols-lg-3 align-items-stretch my-3">
-        <div class="col">
-          <div class="box-light h-100">
-            <h3 class="text-center m-2">Back-End</h3>
-            <div class="box-vertical-line-light"></div>
-            <div class="px-3">
-              <h5>Java EE</h5>
-              <div class="progress border border-secondary">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="0"
-                  aria-valuemin="0" aria-valuemax="100">
-                </div>
+      <div class="line-light mx-auto mb-4"></div>
+      <p class="col-12 mx-auto mb-4">Estos son algunos de los lenguajes de programación, frameworks y tecnologias que he aprendido, y en los cuales me sigo capacitando. 
+      Aunque tengo conocimiento en diferentes lenguajes backend como php y asp.net, mi fuerte es la programación con Java y su version Empresarial.</p>
+      <div class=" row row-cols-4 align-items-stretch justify-content-center my-4">
+        <div class="col-12 col-lg-3 col-md-6 p-3">
+          <h6 class="text-uppercase font-bold">BACKEND</h6>
+          <div class="box-line-light mb-3"></div>
+          <div class="my-2">
+            <div class="d-flex align-items-center">
+              <img src="assets/images/icons/java.webp" alt="Logo Java">
+              <h6 class="m-1 fw-normal">Java EE</h6>
+            </div>
+            <div class="progress border border-secondary mt-1" style="height:10px">
+              <div class="progress-bar " role="progressbar" style="width: 85%" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">
               </div>
             </div>
-            <div class="my-2 px-3">
-              <h5>PHP</h5>
-              <div class="progress border border-secondary">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="0"
-                  aria-valuemin="0" aria-valuemax="100">
-                </div>
+          </div>
+          <div class="my-2">
+            <div class="d-flex align-items-center">
+              <img src="assets/images/icons/java.webp" alt="Logo Java">
+              <h6 class="m-1 fw-normal">JAX-RS</h6>
+            </div>
+            <div class="progress border border-secondary mt-1" style="height:10px">
+              <div class="progress-bar " role="progressbar" style="width: 60%" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="my-2">
+            <div class="d-flex align-items-center ">
+              <img src="assets/images/icons/node.webp" alt="Logo Node">
+              <h6 class="m-1 fw-normal">Node JS</h6>
+            </div>
+            <div class="progress border border-secondary mt-1" style="height:10px">
+              <div class="progress-bar " role="progressbar" style="width: 30%" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="my-2">
+            <div class="d-flex align-items-center ">
+              <img src="assets/images/icons/net.webp" alt="Logo .NET">
+              <h6 class="m-1 fw-normal">.NET</h6>
+            </div>
+            <div class="progress border border-secondary mt-1" style="height:10px">
+              <div class="progress-bar " role="progressbar" style="width: 20%" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-12 col-lg-3 col-md-6 p-3">
+          <h6 class="text-uppercase font-bold">Frontend</h6>
+          <div class="box-line-light mb-3"></div>
+          <div class="my-2">
+            <div class="d-flex align-items-center ">
+              <img src="assets/images/icons/html.webp" alt="Logo Html">
+              <h6 class="m-1 fw-normal">Html</h6>
+            </div>
+            <div class="progress border border-secondary mt-1" style="height:10px">
+              <div class="progress-bar " role="progressbar" style="width: 90%" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+          <div class="my-2">
+            <div class="d-flex align-items-center ">
+              <img src="assets/images/icons/css.webp" alt="Logo Css">
+              <h6 class="m-1 fw-normal">Css</h6>
+            </div>
+            <div class="progress border border-secondary mt-1" style="height:10px">
+              <div class="progress-bar " role="progressbar" style="width: 70%" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+          <div class="my-2">
+            <div class="d-flex align-items-center ">
+              <img src="assets/images/icons/javascript.webp" alt="Logo JavaScript">
+              <h6 class="m-1 fw-normal">JavaScript</h6>
+            </div>
+            <div class="progress border border-secondary mt-1" style="height:10px">
+              <div class="progress-bar " role="progressbar" style="width: 60%" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+          <div class="my-2">
+            <div class="d-flex align-items-center ">
+              <img src="assets/images/icons/bootstrap.webp" alt="Logo Bootstrap">
+              <h6 class="m-1 fw-normal">Bootstrap 5</h6>
+            </div>
+            <div class="progress border border-secondary mt-1" style="height:10px">
+              <div class="progress-bar " role="progressbar" style="width: 50%" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+          <div class="my-2">
+            <div class="d-flex align-items-center">
+              <img src="assets/images/icons/angular.webp" alt="Logo Angular">
+              <h6 class="m-1 fw-normal">Angular JS</h6>
+            </div>
+            <div class="progress border border-secondary mt-1" style="height:10px">
+              <div class="progress-bar " role="progressbar" style="width: 20%" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">
               </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="box-light h-100 ">
-            <h3 class="text-center m-2">Front-End</h3>
-            <div class="box-vertical-line-light"></div>
-            <div class="px-3">
-              <h5>Html/Css</h5>
-              <div class="progress border border-secondary">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="0"
-                  aria-valuemin="0" aria-valuemax="100">
-                </div>
+
+        <div class="col-12 col-lg-3 col-md-6 p-3">
+          <h6 class="text-uppercase font-bold">Bases de datos</h6>
+          <div class="box-line-light mb-3"></div>
+          <div class="my-2">
+            <div class="d-flex align-items-center ">
+              <img src="assets/images/icons/postgres.webp" alt="Logo PostgreSQL">
+              <h6 class="m-1 fw-normal">PostgreSQL</h6>
+            </div>
+            <div class="progress border border-secondary mt-1" style="height:10px">
+              <div class="progress-bar " role="progressbar" style="width: 70%" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">
               </div>
             </div>
-            <div class="my-3 px-3">
-              <h5>JavaSript</h5>
-              <div class="progress border border-secondary">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="0"
-                  aria-valuemin="0" aria-valuemax="100">
-                </div>
+          </div>
+          <div class="my-2">
+            <div class="d-flex align-items-center ">
+              <img src="assets/images/icons/mysql.webp" alt="Logo MySQL">
+              <h6 class="m-1 fw-normal">MySQL</h6>
+            </div>
+            <div class="progress border border-secondary mt-1" style="height:10px">
+              <div class="progress-bar " role="progressbar" style="width: 40%" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">
               </div>
             </div>
-            <div class="my-3 px-3">
-              <h5>Angular</h5>
-              <div class="progress border border-secondary">
-                <div class="progress-bar bg-warning" role="progressbar" style="width:10%" aria-valuenow="0"
-                  aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
+          </div>
+
+          <div class="my-2">
+            <div class="d-flex align-items-center ">
+              <img src="assets/images/icons/mongodb.webp">
+              <h6 class="m-1 fw-normal">MongoDB </h6>
             </div>
-            <div class="my-3 px-3">
-              <h5>Bootstrap</h5>
-              <div class="progress border border-secondary mb-4">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="0"
-                  aria-valuemin="0" aria-valuemax="100">
-                </div>
+            <div class="progress border border-secondary mt-1" style="height:10px">
+              <div class="progress-bar " role="progressbar" style="width: 30%" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">
               </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="box-light h-100">
-            <h3 class="text-center m-2">Otras Tecnologias</h3>
-            <div class="box-vertical-line-light"></div>
-            <div class="px-3">
-              <h5>Firebase</h5>
-              <div class="progress border border-secondary">
-                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 70%" aria-valuenow="0"
-                  aria-valuemin="0" aria-valuemax="100">
-                </div>
+
+        <div class="col-12 col-lg-3 col-md-6 p-3">
+          <h6 class="text-uppercase font-bold">Otras</h6>
+          <div class="box-line-light mb-3"></div>
+          <div class="my-2">
+            <div class="d-flex align-items-center ">
+              <img src="assets/images/icons/firebase.webp" alt="Logo PostgreSQL">
+              <h6 class="m-1 fw-normal">Firebase</h6>
+            </div>
+            <div class="progress border border-secondary mt-1" style="height:10px">
+              <div class="progress-bar " role="progressbar" style="width: 90%" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">
               </div>
             </div>
-            <div class="my-3 px-3">
-              <h5>Git-Hub</h5>
-              <div class="progress border border-secondary">
-                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 50%" aria-valuenow="0"
-                  aria-valuemin="0" aria-valuemax="100">
-                </div>
+          </div>
+          <div class="my-2">
+            <div class="d-flex align-items-center ">
+              <img src="assets/images/icons/git.webp">
+              <h6 class="m-1 fw-normal">Git</h6>
+            </div>
+            <div class="progress border border-secondary mt-1" style="height:10px">
+              <div class="progress-bar " role="progressbar" style="width: 50%" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="my-2">
+            <div class="d-flex align-items-center ">
+              <img src="assets/images/icons/scrum.webp">
+              <h6 class="m-1 fw-normal">Scrum</h6>
+            </div>
+            <div class="progress border border-secondary mt-1" style="height:10px">
+              <div class="progress-bar " role="progressbar" style="width: 40%" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
+
+  
 
   <!-- Portafolio -->
   <section id="portafolio" class="section-dark py-4">
@@ -198,45 +312,65 @@
   <section id="contacto" class="section-light py-4">
     <div class="container">
       <h2 class="text-center">CONTACTO</h2>
-      <div class="vertical-line-light mx-auto mb-4"></div>
+      <div class="line-light mx-auto mb-4"></div>
       <div class="row justify-content-center my-3">
-        <div class="col-5">
-          <h3>Comunicate Conmigo!</h3>
-          <p>¡No dudes en ponerte en contacto! Siempre estoy interesado en conocer nuevas ideas de proyectos y oportunidades laborales.</p>
-          <p><i class="fas fa-at mx-1"></i><strong class="ms-2">cristianpinillostorres@gmail.com</strong></p>
-          <p><i class="fas fa-phone-alt mx-1"></i><strong class="ms-2">+57 312-360-7786</strong></p>
-          <div class="d-flex flex-row mx-2 mb-3">
-            <div class="my-2">
-              <a href="https://www.linkedin.com/in/cristhian-david-pinillos-torres/" target="_blank">
-                <img class="me-3" src="assets/images/icons/linkedin.png" width="50" height="50"
-                  style="cursor: pointer;" />
-              </a>
+        <div class="col-lg-6">
+          <p class="col-11 mb-4">¡No dudes en ponerte en contacto!<br>Siempre estoy interesado en conocer nuevas ideas de proyecto y oportunidades laborales.</p>
+          <div class="row">
+            <div class="col-1 col-sm-1 col-xs-1 pr-0 icon">
+              <i class="fa fa-envelope-open" aria-hidden="true"></i>
             </div>
-            <div class="my-2">
-              <img class="me-3" src="assets/images/icons/whatsapp.png" width="50" height="50"
-                style="cursor: pointer;" />
+            <div class="col-11">
+              <h6>Correo Electronico</h6>
+              <p>cristianpinillos@gmail.com</p>
             </div>
-            <div class="my-2">
-              <a href="https://www.linkedin.com/in/cristhian-david-pinillos-torres/" target="_blank">
-                <img class="me-3" src="assets/images/icons/github.png" width="50" height="50"
-                  style="cursor: pointer;" />
-              </a>
+            <div class="col-1 col-sm-1 col-xs-1 pr-0 icon">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="col-11 ">
+              <h6>Telefono</h6>
+              <p> +57 312-360-7786</p>
+            </div>
+            <div class="d-flex flex-row my-3">
+              <div class="my-2">
+                <a href="https://www.linkedin.com/in/cristhian-david-pinillos-torres/" target="_blank">
+                  <img class="me-3" src="assets/images/icons/linkedin.webp" width="50" height="50"
+                    style="cursor: pointer;" />
+                </a>
+              </div>
+              <div class="my-2">
+                <img class="me-3" src="assets/images/icons/whatsapp.webp" width="50" height="50"/>
+              </div>
+              <div class="my-2">
+                <a href="https://www.linkedin.com/in/cristhian-david-pinillos-torres/" target="_blank">
+                  <img class="me-3" src="assets/images/icons/github.webp" width="50" height="50"
+                    style="cursor: pointer;" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-5">
-          <div class="contact-form">
-            <h3 class="mb-3"><i class="fas fa-envelope-square me-2"></i>Enviame un mensaje</h3>
-            <form>
-              <input type="text" placeholder="Nombre" class="form-control mb-2" required="" />
-              <input type="email" placeholder="Correo electronico" class="form-control mb-2" required="" />
-              <input type="text" placeholder="Asunto" class="form-control mb-2" required="" />
-              <textarea name="Message" placeholder="Escribe tu mensaje" class="form-control mb-2"
-                required=""></textarea>
-              <div class="d-flex justify-content-end">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </div>
-            </form>
+
+        <div class="col-lg-6 px-3">
+          <div class="row contact-form">
+            <div class="col-1 col-sm-1 col-xs-1 pr-0 icon mt-1">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div class="col-11 col-sm-11 ">
+              <h5>Enviame un mensaje</h5>
+            </div>
+            <div class="my-2">
+              <form>
+                <input type="text" placeholder="Nombre" class="form-control mb-2" required="" />
+                <input type="email" placeholder="Correo electronico" class="form-control mb-2" required="" />
+                <input type="text" placeholder="Asunto" class="form-control mb-2" required="" />
+                <textarea name="Message" placeholder="Escribe tu mensaje" class="form-control mb-2"
+                  required=""></textarea>
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

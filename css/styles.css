@@ -41,8 +41,18 @@
   -webkit-text-stroke: 1px #001522;
 }
 
+/* Header */
+.header{
+  background-color: #011d30;
+}
 
-/* Section Light*/
+.navbar {
+  color: #011d30;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* Section Dark */
 .section-dark {
   background-color: #011d30;
   color: #eeeeee;
@@ -68,7 +78,7 @@
 .line-light {
   height: 5px;
   width: 100px;
-  background-color: #146fac;
+  background-color: #0099ff;
 }
 .box-light {
   background-color: #dddddd;
@@ -76,22 +86,28 @@
   border-radius: 10px;
 }
 
-.box-light-line {
+.box-line-light {
   height: 2px;
   background-color: #bbbbbb;
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 20px;
+}
+/* Contacto */
+.icon i {
+  font-size: 25px;
 }
 
 .contact-form {
   padding: 1em;
-  background-color: #bbbbbb;
-  border: 1px solid #01101a;
-  border-radius: 10px;
+  background-color: #f9f9f9;
+
+  border-radius: 2px;
 }
 
-/* Icons */
+
+
+
+
+
+/* Iconos */
 #icono-down {
   font-size: 40px;
   color: #fafafa;
@@ -101,4 +117,15 @@
 
 #mail-form {
   color: #011d30;
+}
+
+.contacto {
+  background: #333;
+background:url(/assets/images/contacto.jpg) no-repeat 0px 0px;
+background-size:cover;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+-ms-background-size:cover;
+   background-attachment: fixed;
 }
