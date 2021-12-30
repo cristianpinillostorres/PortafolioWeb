@@ -6,6 +6,22 @@
   list-style: none;
 }
 
+body{
+	padding:0;
+	margin:0;
+
+  background:url(/assets/images/contacto.jpg) no-repeat 0px 0px;
+  background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;
+   background-attachment: fixed;
+
+   color : #000000;
+
+}
+
 /* Banner */
 .banner {
   height: 100vh;
@@ -54,8 +70,8 @@
 
 /* Section Dark */
 .section-dark {
-  background-color: #011d30;
-  color: #eeeeee;
+  background-color: #001522;
+  color: #fafafa;
 }
 
 .line-dark {
@@ -64,44 +80,85 @@
   background-color: #919191;
 }
 
-.box-dark {
-  background-color: #002842;
-  border: 1px solid #01101a;
-  border-radius: 10px;
-}
-
 /* Section Light*/
 .section-light {
-  background-color: #eeeeee;
-  color: #011d30;
+  background-color: #f9f9f9;
 }
+
 .line-light {
   height: 5px;
   width: 100px;
   background-color: #0099ff;
-}
-.box-light {
-  background-color: #dddddd;
-  border: 1px solid #bbbbbb;
-  border-radius: 10px;
 }
 
 .box-line-light {
   height: 2px;
   background-color: #bbbbbb;
 }
+
+/*--  services --*/
+.services {
+  /*background:url(/assets/images/contacto.jpg) no-repeat 0px 0px;
+  background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;
+   background-attachment: fixed;*/
+   background-color: #001522;
+}
+
+.services p {
+  line-height: 25px;
+  letter-spacing: .5px;
+  font-size: 15px;
+}
+
+.service-card {
+  padding: 1em;
+  background-color: #001522;;
+  border-radius: 2px;
+  box-shadow: 2px 0px 5px 0px #bbbbbb;
+}
+
+.service-card h3 {
+  font-size: 25px;
+}
+
+.service-card i {
+  position: absolute;
+  opacity: .2;
+  font-size: 45px;
+}
+
+.service-card p{
+  font-size: 15px;
+} 
+
+
+/*-- // services --*/
+
 /* Contacto */
 .icon i {
   font-size: 25px;
 }
 
-.contact-form {
-  padding: 1em;
-  background-color: #f9f9f9;
-
-  border-radius: 2px;
+.line-contact{
+  height: 20px;
+  width: 10px;
+  background-color: #bbbbbb;
 }
 
+.contact-form {
+  padding: 1em;
+  background-color: #fdfdfd;
+  border-radius: 2px;
+  box-shadow: 2px 0px 5px 0px #bbbbbb;
+}
+
+.contact-social{
+
+}
 
 
 
@@ -119,13 +176,3 @@
   color: #011d30;
 }
 
-.contacto {
-  background: #333;
-background:url(/assets/images/contacto.jpg) no-repeat 0px 0px;
-background-size:cover;
--webkit-background-size:cover;
--moz-background-size:cover;
--o-background-size:cover;
--ms-background-size:cover;
-   background-attachment: fixed;
-}
