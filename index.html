@@ -5,12 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio de servicios</title>
+  
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/b6f179fc24.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="body">
   <!-- Cabecera con menu de navegacion -->
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-dark  ">
@@ -52,14 +56,15 @@
   </section>
 -->
   
+
   <!-- Acerca de -->
-  <section id="acerca" class="section-light py-4 m-5">
+  <section id="acerca" class="section-light py-4">
     <div class="container">
       <h2 class="text-center">SOBRE MI</h2>
       <div class="line-light mx-auto mb-4"></div>
       <div class="row justify-content-center my-3">
         <div class="col-lg-6">
-          <p>Hola! Soy Cristhian Pinillos Torres actualmente estudiante de Ingenieria de sistemas. Enfocado en el
+          <p>Hola! Soy <strong>Cristhian Pinillos Torres</strong> actualmente estudiante de Ingenieria de sistemas. Enfocado en el
             estudio del diseño, el desarrollo y el mantenimiento de aplicaciones para entornos web y escritorio.</pc>
           <p>Estoy en búsqueda de nuevos retos profesionales para aquirir experiencia en el campo laboral para asi
             seguir profundizando mis conocimientos y habilidades.</p>
@@ -72,26 +77,26 @@
   </section>
 
   <!-- services -->
-  <section id="servicios" class="services text-light py-4">
+  <section id="servicios" class="section-dark text-light py-4">
     <div class="container py-3">
       <h2 class="text-center">SERVICIOS</h2>
         <div class="line-dark mx-auto"></div>
         <h6 class="text-center mt-4">Los servicios que brindo como desarrollador.</h6>
-        <div class="row d-flex justify-content-evenly">
-          <div class="service-card col-md-5 mt-4">
-            <h3 class="mx-auto mt-3"><i class="fa fa-laptop" aria-hidden="true"></i><strong>Desarrollo Web</strong></h3>
+        <div class="services services-grid">
+          <div class="service-card mt-4 px-4">
+            <h4 class="mx-auto mt-3"><i class="fa fa-laptop" aria-hidden="true"></i><strong>Desarrollo Web</strong></h4>
             <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisci ngelit. In euismod faucibus quam. placerat placerat dolor. Vestibulum</p>
-          </div>  
-          <div class="service-card col-md-5 mt-4">
-            <h3 class="mx-auto mt-3"><i class="fa fa-laptop" aria-hidden="true"></i><strong>Desarrollo Web</strong></h3>
-            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisci ngelit. In euismod faucibus quam. placerat placerat dolor. Vestibulum</p>
-          </div>
-          <div class="service-card col-md-5 mt-4">
-            <h3 class="mx-auto mt-3"><i class="fa fa-laptop" aria-hidden="true"></i><strong>Desarrollo Web</strong></h3>
+          </div> 
+          <div class="service-card mt-4 px-4">
+            <h4 class="mx-auto mt-3"><i class="fa fa-laptop" aria-hidden="true"></i><strong>Desarrollo Web</strong></h4>
             <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisci ngelit. In euismod faucibus quam. placerat placerat dolor. Vestibulum</p>
           </div>
-          <div class="service-card col-md-5 mt-4">
-            <h3 class="mx-auto mt-3"><i class="fa fa-laptop" aria-hidden="true"></i><strong>Desarrollo Web</strong></h3>
+          <div class="service-card mt-4 px-4">
+            <h4 class="mx-auto mt-3"><i class="fa fa-laptop" aria-hidden="true"></i><strong>Desarrollo Web</strong></h4>
+            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisci ngelit. In euismod faucibus quam. placerat placerat dolor. Vestibulum</p>
+          </div>
+          <div class="service-card mt-4 px-4">
+            <h4 class="mx-auto mt-3"><i class="fa fa-laptop" aria-hidden="true"></i><strong>Desarrollo Web</strong></h4>
             <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisci ngelit. In euismod faucibus quam. placerat placerat dolor. Vestibulum</p>
           </div>
         </div>
@@ -99,16 +104,16 @@
   </section>
   
   <!-- Habilidades -->
-  <section class="section-light py-4 m-lg-4">
+  <section class="section-light py-4">
     <div class="container">
       <h2 class="text-center">HABILIDADES</h2>
       <div class="line-light mx-auto mb-4"></div>
-      <p class="col-12 mx-auto mb-4 text-muted">Estos son algunos de los lenguajes de programación, frameworks y tecnologias que he aprendido, y en los cuales me sigo capacitando. 
+      <p class="col-12 mx-auto mb-5 text-center">Estos son algunos de los lenguajes de programación, frameworks y tecnologias que he aprendido, y en los cuales me sigo capacitando. 
       Aunque tengo algunos conocimiento en diferentes lenguajes backend como php y asp.net, mi fuerte es la programación backend con Java y su version Empresarial.</p>
       <div class=" row row-cols-4 align-items-stretch justify-content-center my-4">
-        <div class="col-12 col-lg-3 col-md-6 p-3">
+        <div class="col-12 col-lg-3 col-md-6">
           <h6 class="text-uppercase font-bold">BACKEND</h6>
-          <div class="box-line-light mb-3"></div>
+          <hr>
           <div class="my-2">
             <div class="d-flex align-items-center">
               <img src="assets/images/icons/java.webp" alt="Logo Java">
@@ -133,7 +138,7 @@
           </div>
 
           <div class="my-2">
-            <div class="d-flex align-items-center ">
+            <div class="d-flex align-items-center">
               <img src="assets/images/icons/node.webp" alt="Logo Node">
               <h6 class="m-1 fw-normal">Node JS</h6>
             </div>
@@ -158,9 +163,9 @@
 
         </div>
 
-        <div class="col-12 col-lg-3 col-md-6 p-3">
+        <div class="col-12 col-lg-3 col-md-6">
           <h6 class="text-uppercase font-bold">Frontend</h6>
-          <div class="box-line-light mb-3"></div>
+          <hr>
           <div class="my-2">
             <div class="d-flex align-items-center ">
               <img src="assets/images/icons/html.webp" alt="Logo Html">
@@ -218,9 +223,9 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-3 col-md-6 p-3">
+        <div class="col-12 col-lg-3 col-md-6">
           <h6 class="text-uppercase font-bold">Bases de datos</h6>
-          <div class="box-line-light mb-3"></div>
+          <hr>
           <div class="my-2">
             <div class="d-flex align-items-center ">
               <img src="assets/images/icons/postgres.webp" alt="Logo PostgreSQL">
@@ -245,7 +250,7 @@
           </div>
 
           <div class="my-2">
-            <div class="d-flex align-items-center ">
+            <div class="d-flex align-items-center">
               <img src="assets/images/icons/mongodb.webp">
               <h6 class="m-1 fw-normal">MongoDB </h6>
             </div>
@@ -257,9 +262,9 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-3 col-md-6 p-3">
+        <div class="col-12 col-lg-3 col-md-6">
           <h6 class="text-uppercase font-bold">Otras</h6>
-          <div class="box-line-light mb-3"></div>
+          <hr>
           <div class="my-2">
             <div class="d-flex align-items-center ">
               <img src="assets/images/icons/firebase.webp" alt="Logo PostgreSQL">
@@ -300,34 +305,34 @@
     </div>
   </section>
 
-  <!-- Portafolio -->
-  <section id="portafolio" class="section-dark py-4">
+  <!-- Portafolio 
+  <section id="portafolio" class="services  text-light py-4">
     <div class="container">
       <h2 class="text-center">PORTAFOLIO</h2>
       <div class="line-dark mx-auto"></div>
       <div class="row justify-content-center my-3">
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Contacto -->
-  <section id="contacto" class="section-light py-4 m-lg-5">
+  <section id="contacto" class="section-light contact py-4 m-lg-5">
     <div class="container">
       <h2 class="text-center">CONTACTO</h2>
       <div class="line-light mx-auto mb-4"></div>
-      <div class="row justify-content-center">
-        <div class="col-lg-5 col-md-6 ">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-5 col-md-6">
           <h6>¡No dudes en ponerte en contacto!</h6>
-          <p class="mb-4 text-muted">Siempre estoy interesado en conocer nuevas ideas de proyecto y oportunidades laborales.</p>
+          <p class="mb-4">Siempre estoy interesado en conocer nuevas ideas de proyecto y oportunidades laborales.</p>
           <div class="row mt-4">
-            <div class="col-1 col-sm-1 col-xs-1 pr-0 icon">
+            <div class="col-1 col-sm-1 col-xs-1 icon">
               <i class="fa fa-envelope-open" aria-hidden="true"></i>
             </div>
             <div class="col-11">
               <h6>Correo Electronico</h6>
               <p>cristianpinillos@gmail.com</p>
             </div>
-            <div class="col-1 col-sm-1 col-xs-1 pr-0 icon">
+            <div class="col-1 col-sm-1 col-xs-1 icon">
               <i class="fa fa-phone" aria-hidden="true"></i>
             </div>
             <div class="col-11 ">
@@ -353,9 +358,9 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-md-6 ">
+        <div class="col-lg-5 col-md-6 mx-4">
           <div class="row contact-form">
-            <div class="col-1 col-sm-1 col-xs-1 pr-0 icon mt-1">
+            <div class="col-1 col-sm-1 col-xs-1 icon">
               <i class="fa fa-envelope" aria-hidden="true"></i>
             </div>
             <div class="col-11 col-sm-11 ">

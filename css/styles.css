@@ -6,27 +6,36 @@
   list-style: none;
 }
 
-body{
-	padding:0;
-	margin:0;
+.body {
+  font-family: 'Open Sans', sans-serif;
+  background: url(/assets/images/fondo.jpg) no-repeat 0px 0px;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+  letter-spacing: 0.9px;
+}
 
-  background:url(/assets/images/contacto.jpg) no-repeat 0px 0px;
-  background-size:cover;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  -ms-background-size:cover;
-   background-attachment: fixed;
-
-   color : #000000;
-
+.body::before{
+  content: "";
+  background-color: rgba(0, 15, 25, 0.85);
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
 /* Banner */
 .banner {
   height: 100vh;
   width: 100%;
-  background-image: url("../assets/images/fondo.jpg");
+  background-image: url(../assets/images/fondo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,7 +43,7 @@ body{
 .banner-content {
   height: 100vh;
   width: 100%;
-  background-color: rgba(3, 22, 37, 0.65);
+  background-color: rgba(0, 15, 25, 0.9);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -58,8 +67,8 @@ body{
 }
 
 /* Header */
-.header{
-  background-color: #011d30;
+.header {
+  background-color: rgb(0, 15, 25);
 }
 
 .navbar {
@@ -68,21 +77,13 @@ body{
   margin: 0 auto;
 }
 
-/* Section Dark */
-.section-dark {
-  background-color: #001522;
-  color: #fafafa;
-}
-
-.line-dark {
-  height: 5px;
-  width: 100px;
-  background-color: #919191;
-}
-
-/* Section Light*/
+/*-- Section Light --*/
 .section-light {
-  background-color: #f9f9f9;
+  background-color: rgb(249, 249, 249);
+}
+
+.section-light h2{
+  font-weight: 600;
 }
 
 .line-light {
@@ -91,62 +92,62 @@ body{
   background-color: #0099ff;
 }
 
-.box-line-light {
-  height: 2px;
-  background-color: #bbbbbb;
+/*-- Section Dark --*/
+.section-dark h2{
+  font-weight: 600;
 }
 
-/*--  services --*/
-.services {
-  /*background:url(/assets/images/contacto.jpg) no-repeat 0px 0px;
-  background-size:cover;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  -ms-background-size:cover;
-   background-attachment: fixed;*/
-   background-color: #001522;
+.line-dark {
+  height: 5px;
+  width: 100px;
+  background-color: rgb(249, 249, 249);
 }
+
+
+/*-- services --*/
+
+.services{
+  display: grid; 
+}
+
+.services-grid {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px; }
 
 .services p {
-  line-height: 25px;
-  letter-spacing: .5px;
+  line-height: 25px;  
   font-size: 15px;
 }
 
 .service-card {
-  padding: 1em;
-  background-color: #001522;;
-  border-radius: 2px;
-  box-shadow: 2px 0px 5px 0px #bbbbbb;
+  transition: 0.3s ease-out;
+  border-radius: 4px;
+  background: rgba(249, 249, 249, 0.1);
 }
 
-.service-card h3 {
-  font-size: 25px;
+.service-card:hover {
+  background:  rgba(0, 0, 10, 0.85);
+  transition: 0.3s ease-out;
+  opacity: 0.8;
 }
 
 .service-card i {
   position: absolute;
-  opacity: .2;
+  opacity: 0.2;
   font-size: 45px;
 }
 
-.service-card p{
-  font-size: 15px;
-} 
-
-
-/*-- // services --*/
-
-/* Contacto */
-.icon i {
-  font-size: 25px;
+/*-- Contact --*/
+.contact h5{
+  font-weight: bold;
 }
 
-.line-contact{
-  height: 20px;
-  width: 10px;
-  background-color: #bbbbbb;
+.contact h6{
+  font-weight: bold;
+}
+
+.icon i {
+  font-size: 30px;
 }
 
 .contact-form {
@@ -155,13 +156,6 @@ body{
   border-radius: 2px;
   box-shadow: 2px 0px 5px 0px #bbbbbb;
 }
-
-.contact-social{
-
-}
-
-
-
 
 
 /* Iconos */
