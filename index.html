@@ -7,7 +7,8 @@
   <title>Portafolio de servicios</title>
   
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
@@ -15,63 +16,53 @@
 </head>
 
 <body class="body">
-  <!-- Cabecera con menu de navegacion -->
-  <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark  ">
+
+  <!-- Cabecera con menu de navegacion-->
+  <header class="header sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark">
       <div class="container-fluid">
-        <div class="navbar-brand d-flex" href="#">
-          <img src="../assets/images/logo.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
+        <div class="navbar-brand d-flex logo" href="#">
+          <img src="./assets/images/logo.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
           <span class="ms-3">Portafolio Web</span>
         </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#servicios">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portafolio">Portafolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portafolio">Portafolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- Banner 
-  <section class="section-dark">
-    <section class="banner">
-      <div class="banner-content">
-        <h4>Hola! Bienvenido a mi portafolio</h4>
-        <h1>Desarrollador Full Stack</h1>
-        <h3>Diseño - Desarrollo - Mantenimiento </h3>
-        <a href="#acerca"><i id="icono-down" class="fas fa-chevron-down"></i></a>
-      </div>
-    </section>
-  </section>
--->
-  
-
   <!-- Acerca de -->
   <section id="acerca" class="section-light py-4">
-    <div class="container">
+    <div class="container-lg">
       <h2 class="text-center"><strong>SOBRE MI</strong></h2>
       <div class="line-light mx-auto mb-4"></div>
-      <div class="row justify-content-center my-3">
-        <div class="col-lg-6">
+      <div class="row justify-content-center align-items-center my-3">
+        <div class="col-lg-6 col-md-6 px-md-0 px-sm-5 px-3">
           <p>Hola! Soy <strong>Cristhian Pinillos Torres</strong> desarrollador full Stack. Enfocado en el diseño, el desarrollo y el mantenimiento de aplicaciones para entornos web y escritorio.</pc>
           <p>Estoy en búsqueda de nuevos retos profesionales para asi seguir profundizando mis conocimientos y habilidades.</p>
+          <button class="btn btn-primary my-1">Descargar CV</button>
         </div>
-        <div class="col-lg-4">
-          <div class="w3-banner-img">
-            <img src="./assets/images/foto.webp" alt="img" width="200" height="250">
+        <div class="col-lg-5 col-md-5 mt-sm-4 mt-4">
+          <div class="about-img">
+            <img src="./assets/images/foto.webp" alt="img" width="250" height="300">
           </div>
-          
         </div>
       </div>
     </div>
@@ -79,13 +70,12 @@
 
   <!-- services -->
   <section id="servicios" class="text-light py-4">
-    <div class="container">
+    <div class="container-lg ">
       <h2 class="text-center"><strong>SERVICIOS</strong></h2>
         <div class="line-dark mx-auto"></div>
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch mt-4">
-  
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3align-items-stretch mt-4">
           <div class="col mb-3">
-            <div class="service-card h-90 p-1">
+            <div class="service-card p-1">
               <h5 class="text-center my-3"><i class="fa fa-laptop" aria-hidden="true"></i>
                 <strong>Desarrollo Back-end</strong>
               </h5>
@@ -102,7 +92,7 @@
             </div>
           </div>
   
-          <div class="col mb-3">
+          <div class="col mb-3 ">
             <div class="service-card  p-1">
               <h5 class="text-center my-3"><i class="fa fa-laptop" aria-hidden="true"></i>
                 <strong>Consultas y asesorias</strong>
@@ -117,12 +107,12 @@
   
   <!-- Habilidades -->
   <section class="section-light py-4">
-    <div class="container">
+    <div class="container-md">
       <h2 class="text-center"><strong>HABILIDADES</strong></h2>
       <div class="line-light mx-auto mb-4"></div>
-      <p class="col-12 mx-auto mb-4 text-center">Estos son algunos de los lenguajes de programación, frameworks y tecnologias que he aprendido, y en los cuales me sigo capacitando. 
+      <p class="col-12 mx-auto mb-4 ">Estos son algunos de los lenguajes de programación, frameworks y tecnologias que he aprendido, y en los cuales me sigo capacitando. 
       Aunque tengo algunos conocimiento en diferentes lenguajes backend como php y asp.net, pero mi fuerte es la programación backend con Java y su version Empresarial.</p>
-      <div class=" row row-cols-1 row-cols-lg-2">
+      <div class=" row row-cols-1 row-cols-md-2">
         <div class="col px-4 my-4">
           <h6 class="text-uppercase"><strong>BACK-END</strong></h6>
           <hr>
@@ -328,17 +318,15 @@
     </div>
   </section> 
 
-  
-
   <!-- Contacto -->
-  <section id="contacto" class="section-light contact py-4 m-lg-5">
+  <section id="contacto" class="section-light py-4 m-lg-5 m-md-4">
     <div class="container">
       <h2 class="text-center"><strong>CONTACTO</strong></h2>
       <div class="line-light mx-auto mb-4"></div>
       <div class="row justify-content-center mb-4">
-        <div class="col-lg-5">
-          <h6><strong>¡No dudes en ponerte en contacto!</strong></h6>
-          <p class="mb-4">Siempre estoy interesado en conocer nuevas ideas de proyecto y dispuesto a brindar una asesoria.</p>
+        <div class="col-lg-5 col-md-6">
+          <h6 class="text-start"><strong>¡No dudes en ponerte en contacto!</strong></h6>
+          <p>Siempre estoy interesado en conocer nuevas ideas de proyecto y dispuesto a brindar una asesoria.</p>
           <div class="row row-cols-2 mt-4">
             <div class="col-1 mx-2 icon">
               <i class="fa fa-envelope-open" aria-hidden="true"></i>
@@ -355,35 +343,18 @@
               <p> +57 312-360-7786</p>
               <p> +57 301-244-9857</p>
             </div>
-            <div class="contact-social d-flex flex-row my-3">
-              <div class="my-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Mi perfil de Linkedin">
-                <a href="https://www.linkedin.com/in/cristhian-david-pinillos-torres/" target="_blank">
-                  <img class="me-3" src="assets/images/icons/linkedin.webp" width="50" height="50"
-                    style="cursor: pointer;" />
-                </a>
-              </div>
-              <div class="my-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Chatear por WhatsApp">
-                <img class="me-3" src="assets/images/icons/whatsapp.webp" width="50" height="50"/>
-              </div>
-              <div class="my-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Mi perfil de Git-Hub">
-                <a href="https://www.linkedin.com/in/cristhian-david-pinillos-torres/" target="_blank">
-                  <img class="me-3" src="assets/images/icons/github.webp" width="50" height="50"
-                    style="cursor: pointer;" />
-                </a>
-              </div>
-            </div>
-          </div>
+          </div>          
         </div>
         
-        <div class="col-lg-6 mx-4">
-          <div class="row contact-form">
+        <div class="col-lg-6 col-md-6">
+          <div class="row contact-form mx-1 my-md-0 my-4">
             <div class="col-1 me-2 icon">
               <i class="fa fa-envelope" aria-hidden="true"></i>
             </div>
             <div class="col-10 ">
-              <h5><strong>Enviame un mensaje</strong></h5>
+              <h5 class="text-start"><strong>Enviame un mensaje</strong></h5>
             </div>
-            <div class="my-2">
+            <div class="col-12 my-2">
               <form>
                 <input type="text" placeholder="Nombre" class="form-control mb-2" required="" />
                 <input type="email" placeholder="Correo electronico" class="form-control mb-2" required="" />
@@ -397,20 +368,41 @@
             </div>
           </div>
         </div>
+
+        <div class="col-11">
+          <div class="d-flex flex-row my-4 ms-2 social">
+            <div class="my-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Mi perfil de Linkedin">
+              <a href="https://www.linkedin.com/in/cristhian-david-pinillos-torres/" target="_blank">
+                <img class="me-3" src="assets/images/icons/linkedin.webp" width="50" height="50"
+                  style="cursor: pointer;" />
+              </a>
+            </div>
+            <div class="my-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Chatear por WhatsApp">
+              <img class="me-3" src="assets/images/icons/whatsapp.webp" width="50" height="50"/>
+            </div>
+            <div class="my-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Mi perfil de Git-Hub">
+              <a href="https://www.linkedin.com/in/cristhian-david-pinillos-torres/" target="_blank">
+                <img class="me-3" src="assets/images/icons/github.webp" width="50" height="50"
+                  style="cursor: pointer;" />
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer py-1">
-    <div class="text-center mt-3">
+  <footer class="footer py-1 ">
+    <div class="mt-3 text-center">
       <p class="text-white">© Desarrollado por Cristhian Pinillos Torres 2021 </p>
     </div>
   </footer>
 
-  <script src="js/Bootstrap/bootstrap.js"></script>
-  <script src="js/Bootstrap/bootstrap.bundle.min.js"></script>
-  <script src="js/Lib/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
