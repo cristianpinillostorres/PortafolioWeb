@@ -173,17 +173,6 @@
   }
 }
 
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-@media only screen and (min-width: 576px) {
-  .service-card {
-    height: fit-content;
-  }
-  .social{
-    justify-content: center;
-  }
-}
-
 /* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width: 576px) {
   .about-img img {
@@ -196,8 +185,21 @@
   .footer{
     font-size: 15px;
   }
-  
+  .social{
+    justify-content: center;
+  }
 }
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+  .service-card {
+    height: fit-content;
+  }
+  .social{
+    justify-content: center;
+  }
+}
+
 
 @media only screen and (min-width: 768px) {
   .social{
