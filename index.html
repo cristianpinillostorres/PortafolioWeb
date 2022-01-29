@@ -18,7 +18,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
   <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -59,13 +60,15 @@
   </header>
 
   <!-- Acerca de -->
-  <section id="acerca" class="section-light-white py-md-5 py-4">
+  <section id="acerca" class="section-light-white py-4">
     <div class="container-lg">
       <div class="row justify-content-center">
         <div class="col-md-7 ">
           <h1 class="mb-3"><strong>Hola, Soy Cristhian Pinillos Torres</strong></h2>
-            <p>Desarrollador de software con conocimientos en diseño, desarrollo, pruebas y mantenimiento de sistemas de software.</p>
-            <p>Me considero una persona con una gran motivación por aprender cada día, siempre doy lo mejor de mí en cualquier proyecto, con el fin de obtener los mejores resultados.</p>
+            <p>Desarrollador de software con conocimientos en diseño, desarrollo, pruebas y mantenimiento de sistemas de
+              software.</p>
+            <p>Me considero una persona con una gran motivación por aprender cada día, siempre doy lo mejor de mí en
+              cualquier proyecto, con el fin de obtener los mejores resultados.</p>
             <div class="btn-download">
               <button id="download" class="btn btn-primary">Descargar CV</button>
             </div>
@@ -80,8 +83,8 @@
   </section>
 
   <!-- Habilidades-->
-  <section class="section-light py-3">
-    <div class="container-lg">
+  <section class="section-light pt-5">
+    <div class="container-lg ">
       <h2 class="text-center"><strong>Mis Habilidades</strong></h2>
       <div class="line-light mx-auto mb-4"></div>
       <div class="row justify-content-center">
@@ -330,21 +333,106 @@
     </div>
   </section>
 
-  <!-- Educacion  
-  <section id="educacion" class="section-dark text-light py-4">
+  <div class="section-light">
+    <img src="assets/images/wave.svg" alt="división" class="wave">
+  </div>
+
+  <!-- Educacion -->
+  <section id="educacion" class="section-dark text-light py-3 education">
     <div class="container">
       <h2 class="text-center"><strong>Educación</strong></h2>
       <div class="line-dark mx-auto mb-4"></div>
-      <div class="row">
+      <div class="row row-cols-2 justify-content-center my-4">
 
+        <div class="col seleccion seleccion-activa" data-target='#educacion-formal'>
+          <div class="d-flex flex-row justify-content-end">
+            <i class="uil uil-graduation-cap icon"></i>
+            <h5 class="mt-2 ms-1"><strong>Educación Formal</strong></h5>
+          </div>
+        </div>
+
+        <div class="col seleccion " data-target='#educacion-informal'>
+          <div class="d-flex flex-row">
+            <i class="uil uil-book-alt icon"></i>
+            <h5 class="mt-2 ms-1"><strong>Educación Informal</strong></h5>
+          </div>
+        </div>
       </div>
-    </div>
-  </section> -->
 
+      <div class="row row-cols-3 justify-content-center seleccion-activa" data-content id="educacion-formal">
+        <div class="col">
+          <div class="text-end">
+            <div class="fw-lighter">
+              <i class="uil uil-calendar-alt"></i> 2017 - presente
+            </div>
+            <h5 class=""><strong>Ingenieria de sistemas</strong></h5>
+            <h6 class="text-muted">Univeridad de Cundinamarca Facatativá - Colombia </h6>
+          </div>
+        </div>
+        <div class="col-1 position-relative">
+          <span class="circle position-absolute top-0 start-50 translate-middle"></span>
+          <span class="line position-absolute top-50 start-50 translate-middle"></span>
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col-1 position-relative">
+          <span class="circle position-absolute top-0 start-50 translate-middle"></span>
+          <span class="line position-absolute top-50 start-50 translate-middle"></span>
+        </div>
+        <div class="col">
+          <div>
+            <div class="fw-lighter">
+              <i class="uil uil-calendar-alt"></i> 2016
+            </div>
+            <h5><strong>Tecnico en Sistemas</strong></h5>
+            <h6 class="text-muted">F.U. San Juan Bautista Facatativá - Colombia</h6>
+          </div>          
+        </div>
+      </div>
+
+      <div class="row row-cols-3 justify-content-center" data-content id="educacion-informal">
+        <div class="col">
+          <div class="text-end">
+            <div class="fw-lighter">
+              <i class="uil uil-calendar-alt"></i> 2021
+            </div>
+            <h5 class=""><strong>Curso Firebase</strong></h5>
+            <h6 class="text-muted">Univeridad de Cundinamarca Facatativá - Colombia </h6>
+          </div>
+        </div>
+        <div class="col-1 position-relative">
+          <span class="circle position-absolute top-0 start-50 translate-middle"></span>
+          <span class="line position-absolute top-50 start-50 translate-middle"></span>
+        </div>
+        <div class="col"></div>
+        
+        <div class="col"></div>
+        <div class="col-1 position-relative">
+          <span class="circle position-absolute top-0 start-50 translate-middle"></span>
+          <span class="line position-absolute top-50 start-50 translate-middle"></span>
+        </div>
+        <div class="col">
+          <div>
+            <div class="fw-lighter">
+              <i class="uil uil-calendar-alt"></i> 2021
+            </div>
+            <h5 class="pe-4"><strong>Curso Fundamentos de JavaScript</strong></h5>
+            <h6 class="text-muted">Platzi</h6>
+          </div>          
+        </div>
+      </div>
+
+    </div>  
+  </section>
+
+  <div class="section-light">
+    <img src="assets/images/wave.svg" alt="división" class="wave-bottom">
+  </div>
+  
   <!-- services -->
-  <section id="servicios" class="section-light py-4">
-    <div class="container-lg ">
-      <h2 class="text-center"><strong>Servicios</strong></h2>
+  <section id="servicios" class="section-light pb-4">
+    <div class="container-lg">
+      <h2 class="text-center pt-4"><strong>Servicios</strong></h2>
       <div class="line-light mx-auto mb-4"></div>
       <div class="row row-cols-1 row-cols-md-3 mt-md-5 text-center">
         <div class="col">
@@ -482,7 +570,10 @@
   <script src="./js/index.js"></script>
 
   <!-- Script Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>

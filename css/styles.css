@@ -13,30 +13,13 @@
 }
 
 body {
-  background: url(../assets/images/fondo.jpg) no-repeat 0px 0px;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
-  background-attachment: fixed;
+  background-color: var(--secundary-color);
   position: relative;
   z-index: 0;
   top:70px;
   
 }
 
-body::before{
-  content: "";
-  background-color: var(--primary-color);
-  opacity: 0.9;
-  position: absolute;
-  top: 0;
-  min-height: 100%;
-  left: 0;
-  right: 0;
-  z-index: -1;
-}
 
 body h1, h2, h3, h4, h5, h6, p, button {
   font-family: 'Quicksand', sans-serif;
@@ -146,6 +129,58 @@ body h1, h2, h3, h4, h5, h6, p, button {
 .skills-icon{
   font-size: 30px;
   margin-right: 10px;
+}
+
+/*-- linea divisoria --*/
+.wave {
+  width: 100%;
+  position: relative;
+  top: 5px;
+}
+
+.wave-bottom {
+  transform: scaleY(-1);
+  position: relative;
+  top: -5px;
+}
+
+/*-- Educacion --*/
+
+.education [data-content]{
+  display: none;
+}
+
+.seleccion-activa[data-content]{
+  display: flex;
+}
+
+.seleccion {
+  cursor: pointer;
+}
+.seleccion:hover{
+  color: var(--tertiary-color);
+}
+
+.seleccion.seleccion-activa{
+  color:lightblue;
+}
+
+.seleccion.seleccion-activa :hover{
+  color:var(--tertiary-color);
+}
+
+.circle{
+  width: 15px;
+  height: 15px;
+  background-color: var(--light);
+  border-radius: 50px;
+}
+
+.line{
+ display: block;
+ width: 2px;
+ height: 90%;
+ background-color: var(--light-gray);
 }
 
 /*-- services --*/
@@ -396,52 +431,3 @@ body h1, h2, h3, h4, h5, h6, p, button {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Banner */
-.banner {
-  height: 100vh;
-  width: 100%;
-  background-image: url(../assets/images/fondo.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.banner-content {
-  height: 100vh;
-  width: 100%;
-  background-color: rgba(0, 15, 25, 0.9);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-}
-
-.banner-content h1 {
-  color: #fafafa;
-  font-size: 90px;
-  margin-top: 50px;
-  -webkit-text-stroke: 1px #001522;
-}
-.banner-content h3 {
-  color: #fafafa;
-  -webkit-text-stroke: 1px #001522;
-}
-.banner-content h4 {
-  margin-top: 100px;
-  color: #fafafa;
-  -webkit-text-stroke: 1px #001522;
-}
